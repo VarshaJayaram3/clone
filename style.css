@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    padding-left: 20px;
+    text-shadow: 1px 1px #000;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 1px 1px #000;
+    padding-right: 15px;
+}
+nav ul li a:hover{
+    color: black;
+    transition: .6s;
+}
+
+
+.home1{
+    background-image: url(images/homeimg.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+    width: 100%;
+}
+.hometext{
+    color: white;
+    font-weight: bold;
+   font-family: 'Diphylleia', serif;
+    text-align: center;
+    align-items: center;
+   padding: 275px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #000;
+}
+
+
+.about{
+    align-items: center;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 500px;
+}
+
+
+
+/**/
+.imghov{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 20rem;
+    height: 29rem;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+}
+.container img{
+    width: 100%;
+    height: 100vh;
+
+}
+.caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.caption p{
+ font-weight: 800;
+ letter-spacing: 2px;
+ font-size: 20px;
+ margin-bottom: 200px;
+}
+.container:hover .caption{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.3);
+}
+.container:hover img{
+    transform: scale(1.3);
+    transition: all 0.5s;
+    
+}
+
+
+.yoo{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
+
+.imghov2{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+}
+.container2{
+    width: 25rem;
+    height: 20rem;
+    margin: 25px;
+    position: relative;
+    overflow: hidden;
+
+}
+.container2 img{
+    width: 100%;
+    height: 350px;
+}
+.container2:hover img{
+    transform: scale(1.3);
+    transition: all 0.5s;
+    
+}
+.caption2{
+ position: absolute;
+ top:0;
+ left: 0;
+ width: 100%;
+ height: 350px;
+ 
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.caption2 .tour-name{
+    font-weight: 800;
+ letter-spacing: 2px;
+ font-size: 15px;
+ margin-top: 160px;
+ margin-left: 10px;
+ color: #fff;
+ 
+ 
+}
+.caption2 .fa-ul{
+    color: #fff;
+    padding-top: 15px;
+}
+
+
+.post{
+    margin: 20px;
+}
+
+.post2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.post-content{
+    letter-spacing: 2px;
+}
+.post-content a{
+    text-decoration: none;
+    color: black;
+}
+.post-content  .lwp-button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.post-img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.post-content h1,p{
+    font-family: 'Lobster Two', sans-serif;
+}
+.lwp-button1{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.foot a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*worldmap*/
+
+.world-map{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+
+}
+.world-map img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.pin{
+    background: #4362f8;
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pin::before{
+    content: '';
+    background: #4362f8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: 1.3s ease-in-out infinite;
+}
+.pin span{
+    display:inline-block ;
+    white-space: nowrap;
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 3rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+}
+
+.usa{
+    top: 50%;
+    left: 21%;
+}
+.france{
+ top: 45%;
+ left: 48%;
+}
+.sweden{
+    top: 33%;
+    left: 52%;
+}
+.south-africa{
+top: 78%;
+left: 53%;
+}
+.brazil{
+top: 71%;
+left: 32%;
+}
+.china{
+top: 32%;
+left: 74%;
+}
+.australia{
+top: 76%;
+left: 82%;
+}
